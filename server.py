@@ -12,13 +12,13 @@ def my_home1():
  # def html_page(page_name):
  #    return render_template(page_name)
 
+@app.route("/strategic.html")
+def strategic1():
+   return render_template('strategic.html')
 
-
-
-@app.route("/works.html")
-def works1():
-   return render_template('works.html')
-
+@app.route("/python.html")
+def python1():
+   return render_template('python.html')
 
 @app.route("/about.html")
 def about1():
@@ -36,18 +36,14 @@ def my_home2():
 def works2():
    return render_template('work.html')
 
+@app.route("/soon.html")
+def soon1():
+   return render_template('soon.html')
+
 
 @app.route("/thanks.html")
 def thanks1():
    return render_template('thanks.html')
-
-
-# def write_to_file (data):
-#     with open ('database.txt', mode='a') as database:
-#         email=data["email"]
-#         subject=data['subject']
-#         message=data['message']
-#         file=database.write(f'\n{email},{subject},{message}')
 
 
 def write_to_csv (data):
